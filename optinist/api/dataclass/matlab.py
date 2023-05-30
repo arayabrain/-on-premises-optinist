@@ -1,4 +1,3 @@
-import numpy as np
 import scipy.io as sio
 
 from optinist.api.dataclass.base import BaseData
@@ -12,5 +11,3 @@ class MatlabData(BaseData):
 
         if isinstance(data, str):
             self.data = sio.loadmat(data)
-        else:
-            self.data = self.data = np.array(data)
