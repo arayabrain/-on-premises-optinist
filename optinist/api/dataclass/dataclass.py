@@ -7,6 +7,7 @@ from optinist.api.dataclass.html import HTMLData
 from optinist.api.dataclass.image import ImageData, RoiData
 from optinist.api.dataclass.iscell import IscellData
 from optinist.api.dataclass.lccd import LccdData
+from optinist.api.dataclass.matlab import MatlabData
 from optinist.api.dataclass.nwb import NWBFile
 from optinist.api.dataclass.scatter import ScatterData
 from optinist.api.dataclass.suite2p import Suite2pData
@@ -23,6 +24,7 @@ __all__ = [
     "RoiData",
     "IscellData",
     "LccdData",
+    "MatlabData",
     "NWBFile",
     "ScatterData",
     "Suite2pData",

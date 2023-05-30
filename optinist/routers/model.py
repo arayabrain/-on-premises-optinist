@@ -39,6 +39,7 @@ class FILETYPE:
     IMAGE: str = "image"
     CSV: str = "csv"
     HDF5: str = "hdf5"
+    MATLAB: str = "matlab"
     BEHAVIOR: str = "behavior"
 
 

@@ -7,6 +7,7 @@ export const FILE_TREE_TYPE_SET = {
   CSV: 'csv',
   HDF5: 'hdf5',
   FLUO: 'fluo',
+  MATLAB: 'matlab',
   BEHAVIOR: 'behavior',
   ALL: 'all',
 } as const

@@ -96,6 +96,12 @@ export const inputNodeSlice = createSlice({
                 param: {},
               }
               break
+            case FILE_TYPE_SET.MATLAB:
+              state[node.id] = {
+                fileType,
+                param: {},
+              }
+              break
             case FILE_TYPE_SET.FLUO:
               state[node.id] = {
                 fileType: FILE_TYPE_SET.CSV,

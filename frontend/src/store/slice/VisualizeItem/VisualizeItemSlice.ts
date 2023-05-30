@@ -22,6 +22,7 @@ import {
   FluoItem,
   BehaviorItem,
   VISUALIZE_ITEM_SLICE_NAME,
+  MatlabItem,
 } from './VisualizeItemType'
 import {
   isDisplayDataItem,
@@ -133,6 +134,10 @@ const behaviorItemInitialValue: BehaviorItem = {
   ...displayDataCommonInitialValue,
   dataType: DATA_TYPE_SET.BEHAVIOR,
 }
+const matlabItemInitialValue: MatlabItem = {
+  ...displayDataCommonInitialValue,
+  dataType: DATA_TYPE_SET.MATLAB,
+}
 
 function getDisplayDataItemInitialValue(dataType: DATA_TYPE) {
   switch (dataType) {
@@ -158,6 +163,8 @@ function getDisplayDataItemInitialValue(dataType: DATA_TYPE) {
       return fluoItemInitialValue
     case DATA_TYPE_SET.BEHAVIOR:
       return behaviorItemInitialValue
+    case DATA_TYPE_SET.MATLAB:
+      return matlabItemInitialValue
   }
 }
 
